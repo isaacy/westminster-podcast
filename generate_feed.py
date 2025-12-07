@@ -120,7 +120,10 @@ def generate_feed(messages):
         description="Audio messages from Westminster Chapel of Bellevue.",
         website=BASE_URL,
         explicit=False,
-        image="https://www.westminster.org/wp-content/uploads/2021/06/Westminster-Logo-2021-1.png", 
+        image="https://www.westminster.org/wp-content/uploads/2021/06/Westminster-Logo-2021-1.png",
+        authors=[Person("Westminster Chapel - Bellevue")],
+        owner=Person("Westminster Chapel - Bellevue", "info@westminster.org"), # Optional but good for iTunes
+        language="en",
     )
 
     for msg in messages:
